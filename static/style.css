@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.arrow_box {
+    position: relative;
+    width: 500px;
+    height: 80px;
+    background: #a1d4a1;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.arrow_box:after {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    border-color: rgba(61, 255, 137, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    margin-top: -10px;
+    border-right-color: #a1d4a1;
+    right: 100%;
+    top: 50%;
+}
+
+
+
+.page-header{
+    background    : #f8a437; 
+    color:#703518;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    font-family: "M PLUS Rounded 1c";
+}
+form div {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+label {
+    margin-bottom: 1px;
+    display: block;
+}
+input[type="text"]{
+    background: #FFFFFF;
+    border: 1px rgb(36, 34, 34) solid;
+    border-radius: 5px;  
+    margin-bottom: 15px;
+}
+#article{
+    padding: 10px;
+}
+.wrapper{
+    margin-top: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.button {
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 12pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #f8a437;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px solid #f8a437;    /* 枠の指定 */
+  }
+  .button:hover {
+    color         : #f8a437;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+.page-header{
+    text-align: center;
+}
+.item {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 100px;
+}
+
+footer {
+    background: #f8a437;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+@media (max-width: 600px) {
+    .arrow_box {
+        font-size: 16px;
+    }
+}

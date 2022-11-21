@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+
+<link rel="stylesheet" href="static/style.css"
+{% endblock %}
+
+{% block body %}
+    <header class="page-header">
+        <h1>にこにこ掲示板</h1>
+    </header>
+
+<form action="/" method="post">
+    <div>
+        <label for"name">名前</label>
+        <input type="text" id="name" name="name" placeholder="くま" maxlength='20'>
+    </div>
+    <div>
+        <label for"article">投稿内容</label>
+        <input type="text" id="article" name="article" placeholder="こんにちは" maxlength='30'>
+    </div>
+    <div>
+        <input type="submit" class="button" value="投稿する">
+    </div>
+    
+</form>
+<div class="wrapper">
+{% for post in posts %}
+<div class="card">
+    
+    <div class="item"> 
+        <div><img class="icon" src='static\img\0.png'></div>
+        <div>{{ post.name }}</div>
+    </div>
+    <div class='arrow_box'>{{ post.article }}</div>
+        
+</div>
+{% endfor %}
+</div>
+
+<div id="page_top"><a href="#"></a></div>
+
+<script src=". jsファイルまでのパス"></script>
+{% endblock %}
